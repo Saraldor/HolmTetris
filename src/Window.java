@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class Window {
-    public static final int WIDTH = 300, HEIGHT = 600;
+    public static final int WIDTH = 600, HEIGHT = 640;
     private JFrame windows;
 private Board board;
     public Window() {
@@ -12,7 +12,7 @@ private Board board;
         windows.setLocationRelativeTo(null);
 board = new Board();
 windows.add(board);
-
+        windows.addKeyListener(board);
         windows.setVisible(true);
     }
 
